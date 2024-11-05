@@ -1,0 +1,8 @@
+name: Audit
+run-name: ${{ github.actor }} is auditing
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: npm audit
